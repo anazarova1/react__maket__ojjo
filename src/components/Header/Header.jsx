@@ -9,15 +9,20 @@ export const Header = () => {
         <div className="container">
           <div className={styles.navigate}>
             <nav>
-              <NavLink to="/">Home</NavLink>
-              <NavLink to="/catalog">Catalog</NavLink>
-              <NavLink to="/contacts">Contacts</NavLink>
+              <NavLink to="/">Главная</NavLink>
+              <NavLink to="/catalog">Каталог</NavLink>
+              <NavLink to="/contacts">Контакты</NavLink>
             </nav>
             <div className={styles.logo}>
               <img src={Logo} />
             </div>
-            <nav>
-              <img src={ Search }/>
+            <nav className={styles.navigate}>
+              <img src={Search} />
+              <NavLink to="/catalog">Поиск</NavLink>
+              <div className={styles.header_btn}>
+                <button>Вход</button>
+                <button>Регистрация</button>
+              </div>
             </nav>
           </div>
         </div>

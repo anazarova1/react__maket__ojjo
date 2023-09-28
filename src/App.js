@@ -1,9 +1,9 @@
 import { Routes, Route } from 'react-router';
 import './App.css';
 import { Header } from './components/Header/Header';
-import Home from "./pages/Home/Home"
-import Catalog from "./pages/Catalog/Catalog";
-import Contacts from "./pages/Contacts/Contacts";
+import {Home} from "./pages/Home/Home"
+import {Catalog} from "./pages/Catalog/Catalog";
+import {Contacts} from "./pages/Contacts/Contacts";
 import { Main } from './components/Main/Main';
 
 function App() {
